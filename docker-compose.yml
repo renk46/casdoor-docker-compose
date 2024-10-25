@@ -1,0 +1,9 @@
+services:
+
+  casdoor:
+    container_name: casdoor
+    image: casbin/casdoor:latest
+    ports:
+      - 8000:8000
+    volumes:
+      - ./conf:/conf
